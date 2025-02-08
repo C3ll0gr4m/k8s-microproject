@@ -1,3 +1,24 @@
+### Jules Vic RA3
+
+par pitié soyez indulgent j'étais tout seul dans mon groupe :🙏🙏🙏
+
+# pour tester le https (a condition que le secret soit bien ajouté sur le git mais je sais pas vraiment si c'est le cas):
+
+curl.exe --resolve "microproject.com:443:127.0.0.1" -k -i https://microproject.com/
+
+# pour cet output : 
+
+HTTP/1.1 200 OK
+Date: Sat, 08 Feb 2025 11:34:15 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 18
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/"12-uodC3Ycr2eiNSi6vhj5CiD+vnMA"
+
+Hello, Kubernetes!
+
+
 ## Steps
 
 ### Step 1 - Initial project setup
