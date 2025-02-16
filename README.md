@@ -115,7 +115,7 @@ pour avoir le nom du pod running
 puis
 kubectl describe pod k8s-microproject-deployment-f6c9995cc-nbkkg
 
-pour vérifier que les informations du volume sont bien présentes (voir ligne 156):
+pour vérifier que les informations du volume sont bien présentes (voir ligne 159):
 
 # Output :
 
