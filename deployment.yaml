@@ -17,3 +17,20 @@ spec:
           image: c3ll0gr4m/k8s-microproject
           ports:
             - containerPort: 3000
+          envFrom:
+            - configMapRef:
+                name: my-configmap
+          livenessProbe:
+            httpGet:
+              path: /nohealthz
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            failureThreshold: 3
+          volumeMounts:
+            - name: my-volume
+              mountPath: /usr/src/app/data
+      volumes:
+        - name: my-volume
+          persistentVolumeClaim:
+            claimName: my-pvc
